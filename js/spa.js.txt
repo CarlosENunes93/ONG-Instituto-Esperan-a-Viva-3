@@ -1,0 +1,29 @@
+// js/spa.js
+export function carregarPagina(url, destino) {
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error("Erro ao carregar a página");
+      return res.text();
+    })
+    .then(html => {
+      document.querySelector(destino).innerHTML = html;
+      history.pushState({}, "", url);
+    })
+    .catch(err => console.error("Falha ao carregar página:", err));
+}
+
+export function inicializarSPA() {
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      const href = link.getAttribute("href");
+
+      // Evita recarregar completamente o site
+      if (!href.startsWith("#")) {
+        e.preventDefault();
+        carregarPagina(href, "main");
+      }
+    });
+  });
+}

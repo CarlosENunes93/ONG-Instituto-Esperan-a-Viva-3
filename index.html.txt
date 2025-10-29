@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Plataforma da ONG — missão, visão, valores e contato">
+<title>Instituto Esperança Viva - Página Inicial</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="brand">
+<img src="imagens/Logo.jpg" alt="Logotipo do Instituto Esperança Viva" width="160">
+</div>
+<nav aria-label="Navegação principal">
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section aria-labelledby="sobre">
+<h1 id="sobre">Instituto Esperança Viva — Missão e Atuação</h1>
+<p>Nossa missão é promover inclusão social através de ações educacionais, culturais e ambientais.</p>
+<figure>
+<img src="imagens/crianças.jpeg" alt="Voluntários em atividade comunitária" width="600">
+<figcaption>Atividade de formação com a comunidade</figcaption>
+</figure>
+</section>
+
+
+<section aria-labelledby="conquistas">
+<h2 id="conquistas">Histórico e Conquistas</h2>
+<article>
+<h3>Projeto Alfabetização</h3>
+<p>Desde 2018, mais de 500 pessoas passaram por nosso curso básico de leitura e escrita.</p>
+</article>
+<article>
+<h3>Horta Comunitária</h3>
+<p>Projeto que promove segurança alimentar e geração de renda local.</p>
+</article>
+</section>
+
+
+<aside aria-labelledby="contato">
+<h2 id="contato">Contato</h2>
+<address>
+Instituto Esperança Viva<br>
+Rua Fictícia, 123 — Bairro Modelo<br>
+Cidade - Estado<br>
+<a href="tel:+5511932395874">(11) 9912554878</a><br>
+<a href="mailto:carlos.eduardo@iesperancaviva.org">contato@iesperancaviva.org</a>
+</address>
+</aside>
+</main>
+
+
+<footer>
+<p>&copy; <span id="ano"></span> Instituto Esperança Viva — Todos os direitos reservados.</p>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</footer>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/templates.js"></script>
+<script type="module" src="js/validação.js"></script>
+</body>
+</html>

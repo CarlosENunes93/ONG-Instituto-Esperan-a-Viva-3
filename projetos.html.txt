@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Projetos e ações sociais do Instituto Esperança Viva">
+<title>Projetos — Instituto Esperança Viva</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+<div class="brand">
+<a href="index.html"><img src="imagens/Logo.jpg" alt="Logotipo do Instituto Esperança Viva" width="140"></a>
+</div>
+<nav aria-label="Navegação principal">
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="cadastro.html">Cadastro</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Projetos Sociais</h1>
+
+<section aria-labelledby="voluntariado">
+<h2 id="voluntariado">Voluntariado</h2>
+<p>Conheça oportunidades de voluntariado e como se candidatar.</p>
+<article>
+<h3>Projeto Tutor</h3>
+<p>Mentoria educacional para crianças e adolescentes.</p>
+</article>
+<article>
+<h3>Projeto Verde</h3>
+<p>Atividades de reflorestamento e educação ambiental.</p>
+</article>
+</section>
+
+<section aria-labelledby="saude">
+<h2 id="saude">Como se cuidar</h2>
+<p>Mutirão da saúde, realizado com segurança e transparência.</p>
+<figure>
+<img src="imagens/saude.jpeg" alt="Campanha de Saúde" width="600">
+<figcaption>Campanha anual de Saúde</figcaption>
+</figure>
+</section>
+
+<section aria-labelledby="indicadores">
+<h2 id="indicadores">Indicadores de Impacto</h2>
+<ul>
+<li>Participantes atendidos: 1.200</li>
+<li>Projetos concluídos (último ano): 8</li>
+<li>Voluntários ativos: 150</li>
+</ul>
+</section>
+</main>
+
+<footer>
+<p>&copy; Instituto Esperança Viva</p>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

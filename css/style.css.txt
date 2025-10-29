@@ -1,0 +1,162 @@
+/* ====== Reset básico ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 0 1rem;
+}
+
+/* ====== Cabeçalho ====== */
+header {
+  background-color: #0c4b33;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header img {
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccebd8;
+}
+
+/* ====== Conteúdo principal ====== */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #0c4b33;
+  margin-bottom: 0.8rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ====== Formulários ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #0c4b33;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+input, select {
+  padding: 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #0c4b33;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* ====== Rodapé ====== */
+footer {
+  background-color: #0c4b33;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid #ccebd8;
+  margin-top: 3rem;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+  button {
+  background-color: #0c4b33;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #137b50;
+}
+}

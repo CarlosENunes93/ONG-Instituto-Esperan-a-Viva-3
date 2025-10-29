@@ -1,0 +1,33 @@
+// js/validacao.js
+export function validarFormulario() {
+  const form = document.getElementById("form-cadastro");
+  if (!form) return;
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    let valido = true;
+
+    const campos = form.querySelectorAll("input, select");
+    campos.forEach(campo => {
+      const erroExistente = campo.nextElementSibling;
+      if (erroExistente && erroExistente.classList.contains("erro")) {
+        erroExistente.remove();
+      }
+
+       if (campo.type === "date") {
+        if (!campo.value) {
+        valido = false;
+        const msg = document.createElement("small");
+        msg.classList.add("erro");
+        msg.style.color = "red";
+        msg.textContent = "Campo inválido ou obrigatório.";
+        campo.insertAdjacentElement("afterend", msg);
+      }
+    });
+
+    if (valido) {
+      alert("Cadastro enviado com sucesso!");
+      form.reset();
+    }
+  });
+}

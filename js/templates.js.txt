@@ -1,0 +1,21 @@
+// js/templates.js
+export function criarCardProjeto(titulo, descricao) {
+  const card = document.createElement("article");
+  card.innerHTML = `
+    <h3>${titulo}</h3>
+    <p>${descricao}</p>
+  `;
+  return card;
+}
+
+export function carregarProjetos() {
+  const secao = document.getElementById("voluntariado");
+  if (!secao) return;
+
+  const projetos = [
+    { titulo: "Projeto Tutor", descricao: "Mentoria educacional para crianças e adolescentes." },
+    { titulo: "Projeto Verde", descricao: "Atividades de reflorestamento e educação ambiental." },
+  ];
+
+  projetos.forEach(p => secao.appendChild(criarCardProjeto(p.titulo, p.descricao)));
+}
